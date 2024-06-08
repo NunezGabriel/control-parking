@@ -1,11 +1,11 @@
-from globalResources import menu
+from globalResources import menu, mensajeDespedida
 
 while True:
     menu()
-    opcion = input("Desea Continuar? Si/No: ")
+    opcion = int(input("Ingrese un numero de opcion valido: "))
 
-    if opcion == "No":
-        print("Adios :)")
+    if opcion == 5:
+        mensajeDespedida()
         break
     else:
         continue

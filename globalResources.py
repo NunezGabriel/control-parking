@@ -11,4 +11,8 @@ def menu():
     print("| 5) Salir                                             |")
     print("*------------------------------------------------------*")
 
+def mensajeDespedida():
+    print("*---------------------------------------------------------*")
+    print("| GRACIAS POR USAR EL SISTEMA DE CONTROL, HASTA PRONTO 👋 |")
+    print("*---------------------------------------------------------*")
 
