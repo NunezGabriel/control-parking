@@ -1,4 +1,5 @@
 from globalResources import menu, mensajeDespedida
+from lista_papelera import mostrar_lista, papelera
 
 while True:
     menu()
@@ -11,17 +12,16 @@ while True:
         mensajeDespedida()
         break
     elif opcion == 3:
-        mensajeDespedida()
-        break
+        mostrar_lista()
     elif opcion == 4:
         mensajeDespedida()
         break
     elif opcion == 5:
-        mensajeDespedida()
-        break
+        papelera()
     elif opcion == 6:
         mensajeDespedida()
         break
     else:
+        print("Ingrese un numero VALIDO")
         continue
 

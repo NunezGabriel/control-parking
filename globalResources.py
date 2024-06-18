@@ -18,3 +18,18 @@ def mensajeDespedida():
     print("*---------------------------------------------------------*")
 
 
+def menu_lista():
+    print("*------------------------------------------------------*")
+    print("| - Elije la opcion que quieras utilizar               |")
+    print("|                                                      |")
+    print("| 1) Buscar Vehiculo                                   |")
+    print("| 2) Cancelar                                          |")
+    print("*------------------------------------------------------*")
+
+def menu_papelera():
+    print("*------------------------------------------------------*")
+    print("| - Elije la opcion que quieras utilizar               |")
+    print("|                                                      |")
+    print("| 1) Restaurar                                         |")
+    print("| 2) Cancelar                                          |")
+    print("*------------------------------------------------------*")
