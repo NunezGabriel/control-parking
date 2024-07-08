@@ -40,3 +40,16 @@ def eliminar_vehiculo():
             print("Vehículo eliminado exitosamente.")
             return
     print("Error: Vehículo no encontrado.")
+
+def administrar_vehiculos():
+    while True:
+        menu_administrar()
+        opcion = int(input("Ingrese un número de opción válido: "))
+        if opcion == 1:
+            registrar_vehiculo()
+        elif opcion == 2:
+            eliminar_vehiculo()
+        elif opcion == 3:
+            break
+        else:
+            print("Opción no válida. Intente de nuevo.")

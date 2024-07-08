@@ -1,5 +1,6 @@
 from globalResources import menu, mensajeDespedida
 from lista_papelera import mostrar_lista, papelera
+<<<<<<< HEAD
 from vehicles_admin import registrar_vehiculo, eliminar_vehiculo
 from globalResources import menu_administrar, menu_descuento
 from info_prop import aplicar_descuento
@@ -25,6 +26,10 @@ def submenu_descuento():
             break
         else:
             print("Opción no válida. Intente de nuevo.")
+=======
+from vehicles_admin import administrar_vehiculos
+
+>>>>>>> 680e509636275c4bd16656144eda0ec4b1923b80
 while True:
     menu()
     opcion = int(input("Ingrese un numero de opcion valido: "))
