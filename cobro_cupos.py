@@ -4,8 +4,10 @@ diccionarioxDia = {}        # Se guardan las visitas
 historialVisitas = {}       # Para enlazar con el verdadero historial
 estadoDescuento = {}        # Si se usaron descuentos (cupos)
 
+
 def calcular_descuento(visitas):
     return (visitas // 5) * 0.10
+
 
 while True:
     En_Sa = input("1-Entrada\t2-Salida\t3-Descuentos\t4-Atrás\n--> ")
