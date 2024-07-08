@@ -1,8 +1,8 @@
 from globalResources import menu, mensajeDespedida
 from lista_papelera import mostrar_lista, papelera
 from vehicles_admin import registrar_vehiculo, eliminar_vehiculo
-from globalResources import menu_administrar
-
+from globalResources import menu_administrar, menu_descuento
+from info_prop import aplicar_descuento
 def administrar_vehiculos():
     while True:
         menu_administrar()
@@ -15,22 +15,29 @@ def administrar_vehiculos():
             break
         else:
             print("Opción no válida. Intente de nuevo.")
-
+def submenu_descuento():
+    while True:
+        menu_descuento()
+        opcion = int(input("Ingrese un número de opción válido: "))
+        if opcion == 1:
+            aplicar_descuento()
+        elif opcion == 2:
+            break
+        else:
+            print("Opción no válida. Intente de nuevo.")
 while True:
     menu()
     opcion = int(input("Ingrese un numero de opcion valido: "))
 
     if opcion == 1:
         administrar_vehiculos()
-        break
     elif opcion == 2:
         mensajeDespedida()
         break
     elif opcion == 3:
         mostrar_lista()
     elif opcion == 4:
-        mensajeDespedida()
-        break
+        submenu_descuento()
     elif opcion == 5:
         papelera()
     elif opcion == 6:

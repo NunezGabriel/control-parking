@@ -43,3 +43,11 @@ def menu_papelera():
     print("| 1) Restaurar                                         |")
     print("| 2) Cancelar                                          |")
     print("*------------------------------------------------------*")
+
+def menu_descuento():
+    print("*------------------------------------------------------*")
+    print("|           DESCUENTO POR REGISTRO DE VEHÍCULOS        |")
+    print("*------------------------------------------------------*")
+    print("| 1) Aplicar descuento                                 |")
+    print("| 2) Volver al menú principal                          |")
+    print("*------------------------------------------------------*")
