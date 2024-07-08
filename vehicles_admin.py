@@ -1,7 +1,7 @@
 from globalResources import menu_administrar
 from datetime import datetime
 import os
-
+aforo = 20
 vehiculos = []
 def registrar_vehiculo():
     while True:
@@ -48,7 +48,11 @@ def administrar_vehiculos():
         opcion = int(input("Ingrese un número de opción válido: "))
         if opcion == 1:
             os.system('cls')
-            registrar_vehiculo()
+            if len(vehiculos) != aforo:
+                registrar_vehiculo()
+            else:
+                print("AFORO MAXIMO ALCANZADO")
+                break
         elif opcion == 2:
             os.system('cls')
             eliminar_vehiculo()
