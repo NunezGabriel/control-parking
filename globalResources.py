@@ -17,6 +17,16 @@ def mensajeDespedida():
     print("| GRACIAS POR USAR EL SISTEMA DE CONTROL, HASTA PRONTO 👋 |")
     print("*---------------------------------------------------------*")
 
+def menu_administrar():
+    print("*------------------------------------------------------*")
+    print("|             ADMINISTRACIÓN DE VEHÍCULOS              |")
+    print("*------------------------------------------------------*")
+    print("| - Elije la opcion que quieras utilizar               |")
+    print("|                                                      |")
+    print("| 1) Registrar vehículo                                |")
+    print("| 2) Eliminar vehículo                                 |")
+    print("| 3) Volver                                            |")
+    print("*------------------------------------------------------*")
 
 def menu_lista():
     print("*------------------------------------------------------*")
