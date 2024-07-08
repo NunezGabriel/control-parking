@@ -1,5 +1,6 @@
 from globalResources import menu_administrar
 from datetime import datetime
+import os
 
 vehiculos = []
 def registrar_vehiculo():
@@ -46,8 +47,10 @@ def administrar_vehiculos():
         menu_administrar()
         opcion = int(input("Ingrese un número de opción válido: "))
         if opcion == 1:
+            os.system('cls')
             registrar_vehiculo()
         elif opcion == 2:
+            os.system('cls')
             eliminar_vehiculo()
         elif opcion == 3:
             break
