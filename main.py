@@ -1,7 +1,7 @@
 from globalResources import menu, mensajeDespedida
 from lista_papelera import mostrar_lista, papelera
 from vehicles_admin import administrar_vehiculos
-from info_prop import submenu_descuento
+from info_prop import submenu_foro
 import os
 
 
@@ -21,7 +21,7 @@ while True:
         mostrar_lista()
     elif opcion == 4:
         os.system('cls')
-        submenu_descuento()
+        submenu_foro()
     elif opcion == 5:
         os.system('cls')
         papelera()
