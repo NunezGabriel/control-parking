@@ -30,6 +30,8 @@ def menu_administrar():
 
 def menu_lista():
     print("*------------------------------------------------------*")
+    print("|           LISTA DE VEHICULOS EN EL PARKING           |")
+    print("*------------------------------------------------------*")
     print("| - Elije la opcion que quieras utilizar               |")
     print("|                                                      |")
     print("| 1) Buscar Vehiculo                                   |")
@@ -37,6 +39,8 @@ def menu_lista():
     print("*------------------------------------------------------*")
 
 def menu_papelera():
+    print("*------------------------------------------------------*")
+    print("|                    PAPELERA                          |")
     print("*------------------------------------------------------*")
     print("| - Elije la opcion que quieras utilizar               |")
     print("|                                                      |")
