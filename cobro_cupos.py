@@ -1,4 +1,4 @@
-import datetime, globalResources as glbR, vehicles_admin as va
+import datetime, globalResources as glbR
 
 diccionarioxDia = {}        # Se guardan las visitas
 historialVisitas = {}       # Para enlazar con el verdadero historial
@@ -22,18 +22,17 @@ def cobro_de_cupos():
     print("*------------------------------------------------------*")
 
 
-cobro_de_cupos()
-
-
 while True:
+    cobro_de_cupos()
     En_Sa = input("--> ")
     cobroxHora = 2.00
     descuento = 0
+
     if En_Sa == "4":            # Retrocede al menú
         glbR.menu()
 
     if En_Sa == "1":
-        placa = va.registrar_vehiculo()            # De vehicles_admin
+        placa = input("Ingrese la placa: ")
         Entrada = datetime.datetime.now()
         diccionarioxDia[placa] = Entrada            # Guarda la entrada
         if placa in historialVisitas:
@@ -41,9 +40,10 @@ while True:
         else:
             historialVisitas[placa] = 1             # Primera visita
             estadoDescuento[placa] = "no aplicado"  # no hay suficiente para solicitar un descuento
+        print("Se ha registrado correctamente su entrada")
 
     elif En_Sa == "2":
-        buscarPlaca = input("Ingrese su número de placa: ")
+        buscarPlaca = input("Ingrese su placa: ")
         if buscarPlaca in diccionarioxDia:                  # Busca la placa donde se registró
             Salida = datetime.datetime.now()                # Guarda la salida
             tiempodeEntrada = diccionarioxDia[buscarPlaca]  # Guarda el tiempo de entrada en otra variable
@@ -51,6 +51,8 @@ while True:
             totalSegundos = tiempoTotal.total_seconds()     # Se calcula el tiempo total en segundos
             totalHoras = (totalSegundos // 30)              # Cada 30 segundos es 1 hora
             cobroTotal = totalHoras * cobroxHora            # Se calcula cuánto corresponde cobrar por el tiempo
+            if totalSegundos < 30:
+                cobroTotal = 1.00
 
             if buscarPlaca in historialVisitas:
                 visitas = historialVisitas[buscarPlaca]         # Se saca la cantidad de visitas registrado
@@ -59,7 +61,7 @@ while True:
                     cobroTotal -= cobroTotal * descuento
                     estadoDescuento[buscarPlaca] = "aplicado"   # Ya no se puede usar el descuento
 
-                    # Boleta:
+            # Boleta:
             boleta = (
                 "============================\n"
                 "         BOLETA DE PAGO        \n"
@@ -87,7 +89,7 @@ while True:
             print("No ha ingresado todavía")
 
     elif En_Sa == "3":
-        Placa_descuentos = input("Ingrese su número de placa: ")
+        Placa_descuentos = input("Ingrese su placa: ")
         if Placa_descuentos in historialVisitas:                        # Busca la placa en el historial
             num_rep_Placa = historialVisitas[Placa_descuentos]          # Número de repeticiones
             if num_rep_Placa >= 5 and estadoDescuento[Placa_descuentos] == "no aplicado":
