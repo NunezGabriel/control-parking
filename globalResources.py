@@ -1,3 +1,6 @@
+# En este apartado podremos ver todos los menus como funciones las cuales se usan en todo el programa
+
+# menu general
 def menu():
     print("*------------------------------------------------------*")
     print("| BIENVENIDO AL SISTEMA DE CONTROL DEL ESTACIONAMIENTO |")
@@ -12,11 +15,14 @@ def menu():
     print("| 6) Salir                                             |")
     print("*------------------------------------------------------*")
 
+# mensaje de despedida al salir de la app
 def mensajeDespedida():
     print("*---------------------------------------------------------*")
     print("| GRACIAS POR USAR EL SISTEMA DE CONTROL, HASTA PRONTO 👋 |")
     print("*---------------------------------------------------------*")
 
+
+# menu de administracion de vehiculos
 def menu_administrar():
     print("*------------------------------------------------------*")
     print("|             ADMINISTRACIÓN DE VEHÍCULOS              |")
@@ -28,30 +34,41 @@ def menu_administrar():
     print("| 3) Volver                                            |")
     print("*------------------------------------------------------*")
 
+# menu de listado de vehiculos 
 def menu_lista():
     print("*------------------------------------------------------*")
     print("|           LISTA DE VEHICULOS EN EL PARKING           |")
     print("*------------------------------------------------------*")
     print("| - Elije la opcion que quieras utilizar               |")
-    print("|                                                      |")
-    print("| 1) Buscar Vehiculo                                   |")
-    print("| 2) Cancelar                                          |")
+    print("| 1) Mostrar Lista                                     |")
+    print("| 2) Buscar Vehiculo                                   |")
+    print("| 3) Cancelar                                          |")
     print("*------------------------------------------------------*")
 
+# menu de papelera 
 def menu_papelera():
     print("*------------------------------------------------------*")
     print("|                    PAPELERA                          |")
     print("*------------------------------------------------------*")
     print("| - Elije la opcion que quieras utilizar               |")
-    print("|                                                      |")
-    print("| 1) Restaurar                                         |")
+    print("| 1) Restaurar Carro                                   |")
     print("| 2) Cancelar                                          |")
     print("*------------------------------------------------------*")
 
+# menu de descuentos 
 def menu_descuento():
     print("*------------------------------------------------------*")
     print("|           DESCUENTO POR REGISTRO DE VEHÍCULOS        |")
     print("*------------------------------------------------------*")
     print("| 1) Aplicar descuento                                 |")
     print("| 2) Volver al menú principal                          |")
+    print("*------------------------------------------------------*")
+
+def menuAforo():
+    print("*------------------------------------------------------*")
+    print("|                    FORO CARROS                       |")
+    print("*------------------------------------------------------*")
+    print("| 1) Establecer cantidad de carros en el foro          |")
+    print("| 2) Ver espacio ocupado y disponible                  |")
+    print("| 3) Salir al menú principal                           |")
     print("*------------------------------------------------------*")
