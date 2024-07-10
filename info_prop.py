@@ -8,7 +8,6 @@ foro_carros = []
 
 def submenu_foro():
     # Declarar foro_carros como global para modificarla dentro de la función
-    global foro_carros
     
     while True:
         # Mostrar el menú de aforo

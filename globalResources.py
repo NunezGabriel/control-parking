@@ -10,7 +10,7 @@ def menu():
     print("| 1) Administrar vehiculos                             |")
     print("| 2) Cobro de de cupo                                  |")
     print("| 3) Mostrar Lista                                     |")
-    print("| 4) Buscar informacion del propietario                |")
+    print("| 4) Administrar Aforo                                 |")
     print("| 5) Papelera                                          |")
     print("| 6) Salir                                             |")
     print("*------------------------------------------------------*")
@@ -64,6 +64,7 @@ def menu_descuento():
     print("| 2) Volver al menú principal                          |")
     print("*------------------------------------------------------*")
 
+# menu de Aforo
 def menuAforo():
     print("*------------------------------------------------------*")
     print("|                    FORO CARROS                       |")
@@ -73,6 +74,7 @@ def menuAforo():
     print("| 3) Salir al menú principal                           |")
     print("*------------------------------------------------------*")
 
+# menu de cobro de cupos
 def cobro_de_cupos_menu():
     print("*------------------------------------------------------*")
     print("|                    COBRO DE CUPOS                    |")

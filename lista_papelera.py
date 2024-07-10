@@ -1,5 +1,4 @@
 # Importamos funciones y módulos necesarios
-
 from globalResources import menu_lista, menu_papelera 
 from vehicles_admin import vehiculos, lista_papelera 
 import os 
