@@ -3,6 +3,7 @@ from globalResources import menu, mensajeDespedida
 from lista_papelera import mostrar_lista, papelera
 from vehicles_admin import administrar_vehiculos
 from info_prop import submenu_foro
+from cobro_cupos import cobroTotal
 import os
 
 # Bucle principal del programa
@@ -21,7 +22,7 @@ while True:
         # Limpiar la pantalla
         os.system('cls')
         # Mostrar mensaje de despedida y salir del programa
-        mensajeDespedida()
+        cobroTotal()
         break
     elif opcion == 3:
         # Limpiar la pantalla

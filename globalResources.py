@@ -72,3 +72,15 @@ def menuAforo():
     print("| 2) Ver espacio ocupado y disponible                  |")
     print("| 3) Salir al menú principal                           |")
     print("*------------------------------------------------------*")
+
+def cobro_de_cupos_menu():
+    print("*------------------------------------------------------*")
+    print("|                    COBRO DE CUPOS                    |")
+    print("*------------------------------------------------------*")
+    print("| - Elije la opcion que quieras utilizar               |")
+    print("|                                                      |")
+    print("| 1) Entrada                                           |")
+    print("| 2) Salida                                            |")
+    print("| 3) Descuentos                                        |")
+    print("| 4) Atrás                                             |")
+    print("*------------------------------------------------------*")

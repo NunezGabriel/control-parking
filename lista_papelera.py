@@ -115,6 +115,7 @@ def mostrar_lista():
             # Buscar un vehículo específico
             buscarVehiculo()
         elif opcion == 3:
+            os.system('cls')
             # Salir del bucle y volver al menú principal
             break
         else:
@@ -134,6 +135,7 @@ def papelera():
             # Mostrar y permitir restaurar vehículos de la papelera
             restaurarMostrar()
         elif opcion == 2:
+            os.system('cls')
             # Salir del bucle y volver al menú principal
             break
         else:
