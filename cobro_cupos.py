@@ -33,8 +33,7 @@ while True:
         glbR.menu()
 
     if En_Sa == "1":
-        # placa = va.registrar_vehiculos()            # De vehicles_admin
-        placa = input("Ingrese la placa: ")
+        placa = va.registrar_vehiculo()            # De vehicles_admin
         Entrada = datetime.datetime.now()
         diccionarioxDia[placa] = Entrada            # Guarda la entrada
         if placa in historialVisitas:
