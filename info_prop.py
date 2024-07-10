@@ -8,14 +8,13 @@ foro_carros = []
 
 def submenu_foro():
     # Declarar foro_carros como global para modificarla dentro de la función
-    global foro_carros
     
     while True:
         # Mostrar el menú de aforo
         menuAforo()
         # Solicitar al usuario que seleccione una opción
         opcion = int(input("Seleccione una opción: "))
-        
+        os.system('cls')
         if opcion == 1:
             # Establecer la capacidad del foro
             cantidad_carros = int(input("Ingrese la cantidad de carros que puede tener el foro: "))
@@ -23,6 +22,7 @@ def submenu_foro():
             print(f"Foro establecido para {cantidad_carros} carros.")
         
         elif opcion == 2:
+            os.system('cls')
             # Llenar el foro con los vehículos registrados y mostrar el espacio ocupado/disponible
             for i in range(min(len(vehiculos), len(foro_carros))):
                 foro_carros[i] = vehiculos[i]
@@ -36,6 +36,7 @@ def submenu_foro():
             print(f"Espacio disponible: {espacio_disponible} carros")
         
         elif opcion == 3:
+            os.system('cls')
             # Salir del submenu
             break
         

@@ -3,9 +3,6 @@ from globalResources import menu_administrar
 from datetime import datetime
 import os
 
-# Definir el aforo máximo
-aforo = 20
-
 # Lista para almacenar los vehículos
 vehiculos = []
 
@@ -65,17 +62,13 @@ def administrar_vehiculos():
         if opcion == 1:
             # Limpiar la pantalla
             os.system('cls')
-            # Verificar si hay espacio disponible antes de registrar
-            if len(vehiculos) != aforo:
-                registrar_vehiculo()
-            else:
-                print("AFORO MAXIMO ALCANZADO")
-                break
+            registrar_vehiculo()
         elif opcion == 2:
             # Limpiar la pantalla
             os.system('cls')
             eliminar_vehiculo()
         elif opcion == 3:
+            os.system('cls')
             break
         else:
             print("🔴 Opción no válida. Intente de nuevo.")
